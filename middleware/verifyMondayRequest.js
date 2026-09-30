@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 
 function verifyMondayRequest(req, res, next) {
-  console.log('### verifyMondayRequest called ###');
-  console.log('### DEV_BYPASS_AUTH:', process.env.DEV_BYPASS_AUTH);
-  console.log('### Authorization header:', req.headers.authorization);
+  //console.log('### verifyMondayRequest called ###');
+  //console.log('### DEV_BYPASS_AUTH:', process.env.DEV_BYPASS_AUTH);
+  //console.log('### Authorization header:', req.headers.authorization);
 
   if (process.env.DEV_BYPASS_AUTH === 'true') {
     console.warn('[dev bypass] Skipping monday JWT verification.');
